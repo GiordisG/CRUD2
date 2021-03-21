@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         registro.put("departamento", departamento.getText().toString());
         registro.put("direccion", direccion.getText().toString());
         registro.put("sueldo", sueldo.getText().toString());
-        int i = db.update("persona", registro, "id="+ ID, null);
+        int i = db.update("empleado", registro, "id="+ ID, null);
         db.close();
         if (i == 1){
             Toast.makeText(this, "Los datos fueron editados", Toast.LENGTH_SHORT).show();
