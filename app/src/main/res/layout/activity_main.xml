@@ -7,112 +7,166 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/txtNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Nombre"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="44dp" />
-
-    <EditText
-        android:id="@+id/txtApellido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Apellido"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="103dp" />
-
-    <EditText
         android:id="@+id/txtCodigo_empleado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Codigo de empleado"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="162dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellido" />
 
     <EditText
-        android:id="@+id/txtCedula"
+        android:id="@+id/txtNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:ems="10"
-        android:hint="Cedula"
+        android:hint="Nombre"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="223dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtDepartamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Departamento"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="283dp" />
-
-    <EditText
-        android:id="@+id/txtDireccion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Direccion"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="343dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCedula" />
 
     <EditText
         android:id="@+id/txtSueldo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Sueldo"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="403dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDireccion" />
 
-    <Button
-        android:id="@+id/buttonInsertar"
+    <EditText
+        android:id="@+id/txtDireccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Insertar"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="514dp" />
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Direccion"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDepartamento" />
 
-    <Button
-        android:id="@+id/buttonEditar"
+    <EditText
+        android:id="@+id/txtApellido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Editar"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="514dp" />
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
 
-    <Button
-        android:id="@+id/buttonEliminar"
+    <EditText
+        android:id="@+id/txtCedula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eliminar"
-        tools:layout_editor_absoluteX="272dp"
-        tools:layout_editor_absoluteY="514dp" />
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Cedula"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigo_empleado" />
 
     <Button
         android:id="@+id/buttonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:onClick="buscarId"
         android:text=" Busqueda por ID"
-        tools:layout_editor_absoluteX="186dp"
-        tools:layout_editor_absoluteY="586dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonInsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="insertar"
+        android:text="Insertar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="editar"
+        android:text="Editar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="eliminar"
+        android:text="Eliminar"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonInsertar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonCancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="cancelar"
         android:text="Cancelar"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="586dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonID"
+        app:layout_constraintVertical_bias="0.654" />
+
+    <EditText
+        android:id="@+id/txtID"
+        android:layout_width="138dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
